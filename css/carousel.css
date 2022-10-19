@@ -1,0 +1,33 @@
+.carousel-wrapper {
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    min-width: 280px;
+    border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    max-height: 60vh;
+    gap: 5px;
+    transition: .6s ease-in-out;
+    padding: 0;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    opacity: .4;
+    transition: .4s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}

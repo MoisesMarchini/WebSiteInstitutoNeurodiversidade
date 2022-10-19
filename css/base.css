@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white: #e9edf1;
+    --darkWhite: #e5e8ee;
+    --lightGray: #797d8a;
+    --gray: #484d65;
+    --darkGray: #32354b;
+    --black: #18171f;
+    --lightMainColor: #8BAFD0;
+    --mainColor: #2097e4;
+    --darkMainColor: #0C62DF;
+    --darkestMainColor: #061067;
+    --orange: #ff8601;
+
+    --autismoFlagColor01: #fec200;
+    --autismoFlagColor02: #0273ff;
+    --autismoFlagColor03: #fc0939;
+    --autismoFlagColor04: #40ba4b;
+    --autismoFlagColor05: #5d4195;
+
+    --navBarNormal: 5rem;
+    --navBarSmall: 4rem;
+    --navBarCurrentSize: var(--navBarNormal);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--black);
+}
+
+.container {
+    width: 100%;
+    padding: 0 8%;
+}
+
+.section {
+    overflow: hidden;
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-darkwhite {
+    background-color: var(--darkWhite);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.nogrow {
+    flex-grow: 0;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.autism-flag-banner {
+    width: 100%;
+    top: 0;
+    position: sticky;
+    height: 4px;
+    z-index: 10;
+}
+
+.autism-flag-banner>* {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.color1 {
+    background: var(--autismoFlagColor01);
+}
+
+.color2 {
+    background: var(--autismoFlagColor02);
+}
+
+.color3 {
+    background: var(--autismoFlagColor03);
+}
+
+.color4 {
+    background: var(--autismoFlagColor04);
+}
+
+.color5 {
+    background: var(--autismoFlagColor05);
+}
+
+.wpp-btn {
+    margin: 4% 0;
+    background: var(--autismoFlagColor04);
+    color: var(--white);
+    padding: 1.5em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    gap: 8px;
+    max-width: fit-content;
+}
+
+.wpp-btn.center {
+    margin: 4% auto;
+}
+
+.wpp-btn i {
+    font-size: 1.5em;
+}
+
+@media (max-width: 950px) {
+    .container {
+        padding: 0 3%;
+    }
+}
